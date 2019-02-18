@@ -1,6 +1,6 @@
 sudo -u fb_ofsaa cat /u01/app/ofsaa8/ficdb/log/t2t/<Logname>
 
-#fichome   - navigates to /u01/app/ofsaa8
+#fichome   - navigates to /u01/app/ofsa8
 #ficdbhome - navigates to /u01/app/ofsaa8/ficdb
 #ficapphome- navigates to /u01/app/ofsaa8/ficapp
 #ficwebhome- navigates to /u01/app/ofsaa8/ficweb
@@ -137,7 +137,7 @@ AND LOAD_RUN_STATUS ='COMPLETED';
 
 Declare 
 D Varchar2(30);
-BEGIN 
+BEGINÂ 
 D := FN_STG_PARTITION_MGT('TEST','20171231','STG_FORWARD_EXCHG_RATES','OFSAA_COM','4') ;
 END; 
 
@@ -269,8 +269,8 @@ alter session set current_schema=ofsaa_com;
 SET SERVEROUTPUT on;
 
 DECLARE D Varchar2(30);
- BEGIN 
- D := FN_STG_PARTITION_MGT('TEST','20180331','STG_FORWARD_EXCHG_RATES','OFSAA_COM','12');
+Â BEGINÂ 
+Â D := FN_STG_PARTITION_MGT('TEST','20180331','STG_FORWARD_EXCHG_RATES','OFSAA_COM','12');
 END ;
 
 
